@@ -20,6 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # for specific
 $(call inherit-product, vendor/motorola/potter/potter-vendor.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 $(call inherit-product, device/motorola/potter/device.mk)
 
 # Boot animation
@@ -28,7 +29,7 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := aosp_potter
+PRODUCT_NAME := du_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
